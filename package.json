@@ -1,0 +1,30 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.2",
+    "nodemon": "^1.19.1",
+    "shortid": "^2.2.14",
+    "url": "^0.11.0",
+    "validator": "^11.0.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^9.0.3",
+    "jest": "^24.8.0",
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "test": "jest --watchAll",
+    "dev": "env-cmd -f ./config/dev.env nodemon src/index.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "",
+  "license": "ISC"
+}
